@@ -25,7 +25,7 @@ body {
     box-shadow: 0 2px 10px 2px #6464644d;
 }
 
-.header {
+.main {
     padding: 4rem;
 }
 
@@ -51,7 +51,6 @@ ul li label {
 
 button {
     background-color: #3d85f0;
-    display: block;
     width: 100%;
     padding: 1.3rem;
     border: none;
@@ -70,4 +69,60 @@ button:hover {
 button:focus {
     outline: none;
     background-color: #4e90f3;
+}
+
+.btns {
+    display: flex;
+}
+
+.btns button:first-child {
+    border-radius: 0 0 0 10px;
+}
+.btns button:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.restart {
+    background-color: #3d85f0;
+    width: 50%;
+    padding: 1.3rem;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.restart:hover {
+    background-color: #6ba0f1;
+    letter-spacing: 1px;
+}
+
+.restart:focus {
+    outline: none;
+    background-color: #4e90f3;
+}
+
+.review {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .container {
+        background-color: #fff;
+        width: 90%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px 2px #6464644d;
+    }
+
+    .main {
+        padding: 2rem;
+    }
+
+    .btns button:last-child {
+        width: 52%;
+        border-radius: 0 0 10px 0;
+    }
 }
