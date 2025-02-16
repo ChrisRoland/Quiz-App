@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
     background-color: #6ba0f1;
     background-image: linear-gradient(30deg, #86b1f2 0%, #edf2f9 100%);
-    font-family: "Mali", sans-serif;
+    font-family: "Muli", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
