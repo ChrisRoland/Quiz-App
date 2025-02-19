@@ -91,10 +91,10 @@ submitBtn.addEventListener("click", () => {
       quiz.innerHTML = `<h2>Your score is ${score}/${quizData.length}</h2>
             <div class="review" id="review">
                 <ol>
-                    <li>${quizData[0].question} <br> <span style="font-weight: bold;">Ans: ${quizData[0].correct}</span></li>
-                    <li>${quizData[1].question} <br> <span style="font-weight: bold;">Ans: ${quizData[1].correct}</span></li>
-                    <li>${quizData[2].question} <br> <span style="font-weight: bold;">Ans: ${quizData[2].correct}</span></li>
-                    <li>${quizData[3].question} <br> <span style="font-weight: bold;">Ans: ${quizData[3].correct}</span></li>
+                    <li>${quizData[0].question} <br> <span style="font-weight: bold;">Ans: (${quizData[0].correct}) ${quizData[0].b}</span></li>
+                    <li>${quizData[1].question} <br> <span style="font-weight: bold;">Ans: (${quizData[1].correct}) ${quizData[1].d}</span></li>
+                    <li>${quizData[2].question} <br> <span style="font-weight: bold;">Ans: (${quizData[2].correct}) ${quizData[2].a}</span></li>
+                    <li>${quizData[3].question} <br> <span style="font-weight: bold;">Ans: (${quizData[3].correct}) ${quizData[3].b}</span></li>
                 </ol>
             </div>
 
