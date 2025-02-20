@@ -89,7 +89,7 @@ submitBtn.addEventListener("click", () => {
       startQuiz();
     } else {
       quiz.innerHTML = `<h2>Your score is ${score}/${quizData.length}</h2>
-            <div class="review" id="review">
+            <div class="review" id="review" style="display: none;">
                 <ol>
                     <li>${quizData[0].question} <br> <span style="font-weight: bold;">Ans: (${quizData[0].correct}) ${quizData[0].b}</span></li>
                     <li>${quizData[1].question} <br> <span style="font-weight: bold;">Ans: (${quizData[1].correct}) ${quizData[1].d}</span></li>
@@ -100,17 +100,13 @@ submitBtn.addEventListener("click", () => {
 
             <div class="btns">
             <button class="restart" onclick="location.reload()">Restart</button>
-            <button class="restart" id="review-btn" onclick="review()">Review answers</button>
-            </btn>`;
+            <button class="restart" id="review-btn">Review answers</button>
+            </div>`;
+
+      document.getElementById("review-btn").addEventListener("click", () => {
+        const review = document.getElementById("review");
+        review.style.display = "block";
+      });
     }
   }
 });
-
-function review() {
-  const review = document.getElementById("review");
-  const reviewBtn = document.getElementById("review-btn");
-
-  reviewBtn.addEventListener("click", () => {
-    review.style.display = "block";
-  });
-}
