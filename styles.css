@@ -1,128 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #6ba0f1;
-    background-image: linear-gradient(30deg, #86b1f2 0%, #edf2f9 100%);
-    font-family: "Muli", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+  background-color: #6ba0f1;
+  background-image: linear-gradient(30deg, #86b1f2 0%, #edf2f9 100%);
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
-  
+
 .container {
-    background-color: #fff;
-    width: 600px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px 2px #6464644d;
+  background-color: #fff;
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px 2px #6464644d;
 }
 
 .main {
-    padding: 4rem;
+  padding: 4rem;
 }
 
 h2 {
-    padding: 1rem;
-    text-align: center;
-    margin: 0;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 ul li {
-    font-size: 1.2rem;
-    margin: 1rem 0;
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 
 ul li label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button {
-    background-color: #3d85f0;
-    width: 100%;
-    padding: 1.3rem;
-    border: none;
-    color: #fff;
-    font-size: 1.1rem;
-    font-family: inherit;
-    cursor: pointer;
-    transition: 0.3s ease;
+  background-color: #3d85f0;
+  width: 100%;
+  padding: 1.3rem;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 button:hover {
-    background-color: #6ba0f1;
-    letter-spacing: 1px;
+  background-color: #6ba0f1;
+  letter-spacing: 1px;
 }
 
 button:focus {
-    outline: none;
-    background-color: #4e90f3;
+  outline: none;
+  background-color: #4e90f3;
 }
 
 .btns {
-    display: flex;
+  display: flex;
 }
 
 .btns button:first-child {
-    border-radius: 0 0 0 10px;
+  border-radius: 0 0 0 10px;
 }
 .btns button:last-child {
-    border-radius: 0 0 10px 0;
+  border-radius: 0 0 10px 0;
 }
 
 .restart {
-    background-color: #3d85f0;
-    width: 50%;
-    padding: 1.3rem;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 1.1rem;
-    font-family: inherit;
-    cursor: pointer;
-    transition: 0.3s ease;
+  background-color: #3d85f0;
+  width: 50%;
+  padding: 1.3rem;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .restart:hover {
-    background-color: #6ba0f1;
-    letter-spacing: 1px;
+  background-color: #6ba0f1;
+  letter-spacing: 1px;
 }
 
 .restart:focus {
-    outline: none;
-    background-color: #4e90f3;
+  outline: none;
+  background-color: #4e90f3;
 }
 
 .review {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 450px) {
-    .container {
-        background-color: #fff;
-        width: 90%;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 10px 2px #6464644d;
-    }
+  .container {
+    background-color: #fff;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px 2px #6464644d;
+  }
 
-    .main {
-        padding: 2rem;
-    }
+  .main {
+    padding: 2rem;
+  }
 
-    .btns button:last-child {
-        width: 52%;
-        border-radius: 0 0 10px 0;
-    }
+  .btns button:last-child {
+    width: 52%;
+    border-radius: 0 0 10px 0;
+  }
 }
